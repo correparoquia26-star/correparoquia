@@ -1,0 +1,480 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#020817;
+    color:#fff;
+    overflow-x:hidden;
+    min-height:100vh;
+}
+
+/* FUNDO */
+
+.bg-glow{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+
+    background:
+    radial-gradient(
+        circle at top,
+        rgba(30,58,138,.25),
+        transparent 45%
+    ),
+
+    radial-gradient(
+        circle at center,
+        rgba(15,23,42,.25),
+        transparent 55%
+    ),
+
+    #020817;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px 50px;
+    text-align:center;
+}
+
+.date-badge{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    border-radius:999px;
+
+    background:
+    rgba(10,25,47,.8);
+
+    border:
+    1px solid rgba(30,58,138,.45);
+
+    color:#cbd5e1;
+
+    font-weight:700;
+
+    font-size:14px;
+
+    margin-bottom:40px;
+
+    backdrop-filter:blur(10px);
+}
+
+.hero h1{
+
+    font-size:clamp(42px,7vw,92px);
+
+    line-height:1.05;
+
+    font-weight:900;
+
+    letter-spacing:-2px;
+
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #cbd5e1,
+        #1e3a8a
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.subtitle{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    line-height:1.7;
+
+    color:#b7c6d9;
+
+    margin-bottom:50px;
+}
+
+/* CONTADOR */
+
+.countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+}
+
+.time-box{
+
+    width:110px;
+
+    padding:20px;
+
+    border-radius:22px;
+
+    background:
+    rgba(10,25,47,.80);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    border-top:
+    3px solid #1e3a8a;
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+    0 0 30px rgba(30,58,138,.12);
+}
+
+.time-box span{
+
+    display:block;
+
+    font-size:34px;
+
+    font-weight:800;
+
+    font-variant-numeric:tabular-nums;
+
+    color:#fff;
+}
+
+.time-box small{
+
+    color:#8fa6c1;
+
+    font-size:12px;
+
+    letter-spacing:1px;
+}
+
+/* BOTÕES */
+
+.btn{
+
+    display:block;
+
+    width:100%;
+
+    max-width:430px;
+
+    margin:15px auto;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    padding:18px 25px;
+
+    border-radius:14px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    transition:.3s;
+}
+
+.btn-primary{
+
+    background:
+    linear-gradient(
+        135deg,
+        #1e3a8a,
+        #0f172a
+    );
+
+    color:white;
+
+    box-shadow:
+    0 10px 40px rgba(30,58,138,.35);
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+}
+
+.btn:not(.btn-primary){
+
+    background:
+    rgba(10,25,47,.85);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    color:white;
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+}
+/* CARDS */
+
+.card{
+
+    width:min(900px,92%);
+
+    margin:30px auto;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:
+    rgba(10,25,47,.75);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+    0 0 40px rgba(30,58,138,.15);
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.25);
+}
+
+.card h2{
+
+    margin-bottom:25px;
+
+    font-size:26px;
+}
+
+.card h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:60px;
+
+    height:4px;
+
+    margin-top:12px;
+
+    border-radius:999px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #1e3a8a,
+        #60a5fa
+    );
+}
+
+.card h3{
+
+    margin-top:25px;
+
+    margin-bottom:15px;
+
+    color:#93c5fd;
+}
+
+.info-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:16px 0;
+
+    border-bottom:
+    1px solid rgba(255,255,255,.07);
+}
+
+.info-row span{
+
+    color:#9db1c8;
+}
+
+.info-row strong{
+
+    text-align:right;
+}
+
+.green{
+    color:#22c55e;
+}
+
+/* PREÇOS */
+
+.price-card{
+
+    width:min(900px,92%);
+
+    margin:40px auto;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(15,35,65,.95),
+        rgba(7,16,31,.95)
+    );
+
+    border:
+    1px solid rgba(30,58,138,.45);
+
+    transition:.3s;
+}
+
+.price-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.25);
+}
+
+.price-card h2{
+
+    margin-bottom:35px;
+
+    font-size:30px;
+}
+
+.price-card h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:60px;
+
+    height:4px;
+
+    margin:12px auto 0;
+
+    border-radius:999px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #1e3a8a,
+        #60a5fa
+    );
+}
+
+.price-option{
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    border-radius:22px;
+
+    background:
+    rgba(255,255,255,.03);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+}
+
+.price-option h3{
+
+    color:#93c5fd;
+
+    margin-bottom:15px;
+}
+
+.price{
+
+    font-size:56px;
+
+    font-weight:900;
+
+    color:white;
+}
+    <!-- ===== SEÇÃO DE LINKS ===== -->
+    <section class="links">
+        <h2>Participação</h2>
+
+        <a class="btn" href="https://forms.gle/qSKUhDNWBFdDK5u96" target="_blank">
+            📝 Inscrição
+        </a>
+
+        <a class="btn secondary" href="https://w.app/xzpf2k" target="_blank">
+            📤 Enviar comprovante
+        </a>
+
+        <a class="btn" href="https://correparoquia26-star.github.io/correparoquiacard/" target="_blank">
+            🎴 Fazer seu card
+        </a>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2026 Corre Paróquia — Paróquia Nossa Senhora do Perpétuo Socorro</p>
+        <p class="small">Desenvolvido para eventos paroquiais</p>
+    </footer>
+
+    <!-- ===== WHATSAPP FLUTUANTE ===== -->
+    <a class="whatsapp-float" href="https://w.app/8f709w" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+
+    <script>
+        // efeito leve de scroll no botão (opcional)
+        window.addEventListener("scroll", () => {
+            const btn = document.querySelector(".whatsapp-float");
+            if (window.scrollY > 200) {
+                btn.style.transform = "scale(1)";
+                btn.style.opacity = "1";
+            } else {
+                btn.style.transform = "scale(0.9)";
+                btn.style.opacity = "0.85";
+            }
+        });
+    </script>
+
+</body>
+</html>
