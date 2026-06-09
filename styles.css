@@ -590,3 +590,24 @@ footer p{
 .btn i{
     margin-right:8px;
 }
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: linear-gradient(
+        180deg,
+        #02112e 0%,
+        #04245c 50%,
+        #02112e 100%
+    );
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: 100vh;
+}
