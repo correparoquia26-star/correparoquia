@@ -564,3 +564,18 @@ footer p{
     opacity:1;
     transform:translateY(0);
 }
+.card h2 i,
+.price-card h2 i{
+    color:#93c5fd;
+    margin-right:10px;
+}
+
+.info-row i{
+    width:20px;
+    color:#60a5fa;
+    margin-right:8px;
+}
+
+.btn i{
+    margin-right:8px;
+}
