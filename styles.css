@@ -24,17 +24,26 @@ body{
     z-index:-1;
 
     background:
-    radial-gradient(
-        circle at top,
-        rgba(30,58,138,.25),
-        transparent 45%
-    ),
 
-    radial-gradient(
-        circle at center,
-        rgba(15,23,42,.25),
-        transparent 55%
-    ),
+radial-gradient(
+    circle at top,
+    rgba(96,165,250,.15),
+    transparent 30%
+),
+
+radial-gradient(
+    circle at center,
+    rgba(59,130,246,.10),
+    transparent 50%
+),
+
+linear-gradient(
+    180deg,
+    #020817 0%,
+    #0f172a 40%,
+    #1e293b 70%,
+    #1e3a8a 100%
+);
 
     #020817;
 }
