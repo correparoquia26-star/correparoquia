@@ -155,63 +155,85 @@ linear-gradient(
 /* CONTADOR */
 
 .countdown{
-
     display:flex;
-
     justify-content:center;
-
-    gap:15px;
-
-    flex-wrap:wrap;
-
-    margin-bottom:40px;
+    align-items:center;
+    gap:14px;
+    width:100%;
+    max-width:420px;
+    margin:70px auto 80px;
+    padding:0 16px;
 }
 
 .time-box{
-
-    width:110px;
-
-    padding:20px;
-
-    border-radius:22px;
-
-    background:
-    rgba(10,25,47,.80);
-
-    border:
-    1px solid rgba(255,255,255,.08);
-
-    border-top:
-    3px solid #1e3a8a;
-
-    backdrop-filter:blur(20px);
-
-    box-shadow:
-    0 0 30px rgba(30,58,138,.12);
+    width:76px;
+    min-width:76px;
+    height:104px;
+    border-radius:32px;
+    background:linear-gradient(180deg,#06152d,#020817);
+    border:2px solid rgba(37,99,235,.45);
+    box-shadow:0 18px 35px rgba(0,0,0,.45);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
 }
 
 .time-box span{
-
-    display:block;
-
     font-size:34px;
-
-    font-weight:800;
-
-    font-variant-numeric:tabular-nums;
-
-    color:#fff;
+    font-weight:900;
+    line-height:1;
 }
 
 .time-box small{
-
-    color:#8fa6c1;
-
+    margin-top:10px;
     font-size:12px;
-
-    letter-spacing:1px;
+    letter-spacing:3px;
+    color:#a8b3c7;
 }
 
+/* CELULAR */
+@media (max-width:480px){
+    .countdown{
+        gap:10px;
+        padding:0 10px;
+        margin:60px auto 70px;
+    }
+
+    .time-box{
+        width:72px;
+        min-width:72px;
+        height:100px;
+        border-radius:30px;
+    }
+
+    .time-box span{
+        font-size:32px;
+    }
+
+    .time-box small{
+        font-size:11px;
+        letter-spacing:2px;
+    }
+}
+
+/* CELULARES MUITO PEQUENOS */
+@media (max-width:360px){
+    .countdown{
+        gap:8px;
+    }
+
+    .time-box{
+        width:66px;
+        min-width:66px;
+        height:96px;
+    }
+
+    .time-box span{
+        font-size:30px;
+    }
+}
 /* BOTÕES */
 
 .btn{
