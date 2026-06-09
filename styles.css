@@ -434,47 +434,4 @@ body{
 
     color:white;
 }
-    <!-- ===== SEÇÃO DE LINKS ===== -->
-    <section class="links">
-        <h2>Participação</h2>
-
-        <a class="btn" href="https://forms.gle/qSKUhDNWBFdDK5u96" target="_blank">
-            📝 Inscrição
-        </a>
-
-        <a class="btn secondary" href="https://w.app/xzpf2k" target="_blank">
-            📤 Enviar comprovante
-        </a>
-
-        <a class="btn" href="https://correparoquia26-star.github.io/correparoquiacard/" target="_blank">
-            🎴 Fazer seu card
-        </a>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <p>© 2026 Corre Paróquia — Paróquia Nossa Senhora do Perpétuo Socorro</p>
-        <p class="small">Desenvolvido para eventos paroquiais</p>
-    </footer>
-
-    <!-- ===== WHATSAPP FLUTUANTE ===== -->
-    <a class="whatsapp-float" href="https://w.app/8f709w" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-    </a>
-
-    <script>
-        // efeito leve de scroll no botão (opcional)
-        window.addEventListener("scroll", () => {
-            const btn = document.querySelector(".whatsapp-float");
-            if (window.scrollY > 200) {
-                btn.style.transform = "scale(1)";
-                btn.style.opacity = "1";
-            } else {
-                btn.style.transform = "scale(0.9)";
-                btn.style.opacity = "0.85";
-            }
-        });
-    </script>
-
-</body>
-</html>
+  
