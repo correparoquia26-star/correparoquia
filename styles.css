@@ -651,3 +651,61 @@ body{
     margin-left:auto;
     margin-right:auto;
 }
+.action-btn,
+.btn,
+.buttons a,
+.cta-button{
+    position:relative;
+    overflow:hidden;
+    animation:pulseBtn 2s infinite;
+}
+
+@keyframes pulseBtn{
+    0%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(59,130,246,.55);
+    }
+
+    70%{
+        transform:scale(1.03);
+        box-shadow:0 0 0 18px rgba(59,130,246,0);
+    }
+
+    100%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(59,130,246,0);
+    }
+}
+
+.action-btn::before,
+.btn::before,
+.buttons a::before,
+.cta-button::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:80%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+    animation:shineBtn 3s infinite;
+}
+
+@keyframes shineBtn{
+    0%{
+        left:-120%;
+    }
+
+    55%{
+        left:130%;
+    }
+
+    100%{
+        left:130%;
+    }
+}
