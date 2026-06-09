@@ -530,23 +530,27 @@ footer p{
     }
 
     .countdown{
+        display:flex;
+        justify-content:center;
+        gap:12px;
         flex-wrap:nowrap;
-        gap:8px;
     }
 
     .time-box{
-        width:22%;
-        padding:12px 5px;
+        width:75px;
+        min-width:75px;
+        padding:18px 10px;
+        border-radius:18px;
     }
 
     .time-box span{
-        font-size:22px;
+        font-size:30px;
     }
 
     .time-box small{
-        font-size:10px;
+        font-size:11px;
     }
-
+}
     .info-row{
         flex-direction:column;
         align-items:flex-start;
