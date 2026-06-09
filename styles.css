@@ -434,4 +434,114 @@ body{
 
     color:white;
 }
-  
+/* ===== BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0b1f3a; /* azul marinho */
+    color: #fff;
+    text-align: center;
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #102a4d, #0b1f3a);
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* ===== LINKS ===== */
+.links {
+    padding: 30px 20px;
+}
+
+.links h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: block;
+    margin: 12px auto;
+    padding: 14px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    background: #1e4fa3;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #2c6ad6;
+    transform: scale(1.02);
+}
+
+.btn.secondary {
+    background: #0f3a7a;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #08162b;
+    font-size: 14px;
+}
+
+footer .small {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+/* ===== WHATSAPP FLUTUANTE ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+.whatsapp-float img {
+    width: 30px;
+    height: 30px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .btn {
+        width: 95%;
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+} 
