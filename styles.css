@@ -33,7 +33,7 @@ body{
     width:100%;
     height:100%;
     z-index:-1;
-}
+
     background:
 
 radial-gradient(
@@ -55,8 +55,6 @@ linear-gradient(
     #1e293b 70%,
     #1e3a8a 100%
 );
-
-    #020817;
 }
 
 /* HERO */
@@ -591,23 +589,39 @@ footer p{
     margin-right:8px;
 }
 html,
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    background: linear-gradient(
-        180deg,
-        #02112e 0%,
-        #04245c 50%,
-        #02112e 100%
-    );
-    overflow-x: hidden;
+body{
+    margin:0;
+    padding:0;
+    min-height:100%;
+    overflow-x:hidden;
 }
 
-body {
-    min-height: 100vh;
+body{
+    min-height:100vh;
+    background:#020817;
+}
+/* CENTRALIZAÇÃO GERAL */
+
+.hero,
+.hero h1,
+.event-name,
+.subtitle,
+.date-badge,
+.countdown,
+.hero-buttons{
+    text-align:center;
 }
 
-.hero {
-    min-height: 100vh;
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero h1,
+.event-name,
+.subtitle{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
 }
