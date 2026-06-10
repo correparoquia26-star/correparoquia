@@ -660,23 +660,6 @@ body{
     animation:pulseBtn 2s infinite;
 }
 
-@keyframes pulseBtn{
-    0%{
-        transform:scale(1);
-        box-shadow:0 0 0 0 rgba(59,130,246,.55);
-    }
-
-    70%{
-        transform:scale(1.03);
-        box-shadow:0 0 0 18px rgba(59,130,246,0);
-    }
-
-    100%{
-        transform:scale(1);
-        box-shadow:0 0 0 0 rgba(59,130,246,0);
-    }
-}
-
 .action-btn::before,
 .btn::before,
 .buttons a::before,
@@ -708,4 +691,14 @@ body{
     100%{
         left:130%;
     }
+}
+.hidden{
+    opacity:0;
+    transform:translateY(45px);
+    transition:opacity .8s ease, transform .8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
 }
