@@ -51,7 +51,7 @@ updateCountdown();
 setInterval(updateCountdown, 1000);
 
 const cards = document.querySelectorAll(
-    ".card, .price-card, .btn"
+    ".card, .price-card, .btn, .actions a, .countdown, .hero p, .date-badge"
 );
 
 const observer = new IntersectionObserver(
