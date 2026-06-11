@@ -72,6 +72,11 @@ Esporte, saúde e devoção em um evento imperdível pelas ruas de Pires Ferreir
 <a class="btn btn-primary" href="https://forms.gle/qSKUhDNWBFdDK5u96" target="_blank">
 <i class="fa-solid fa-clipboard-check"></i> FAZER INSCRIÇÃO
 </a>
+  
+  <a href="#" class="btn pix-btn" id="openPix">
+    <i class="fa-solid fa-qrcode"></i>
+    PAGAR VIA PIX
+</a>
 
 <a class="btn" href="https://w.app/xzpf2k" target="_blank">
 <i class="fa-brands fa-whatsapp"></i> ENVIAR COMPROVANTE
@@ -210,6 +215,44 @@ target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 
 </a>
+
+<div class="pix-modal" id="pixModal">
+
+    <div class="pix-box">
+
+        <button class="close-pix" id="closePix">×</button>
+
+        <h2>Pagamento via PIX</h2>
+
+        <p>
+            Escaneie o QR Code ou copie a chave PIX abaixo.
+        </p>
+
+        <img
+            src="qrcode-pix.png"
+            alt="QR Code PIX"
+            class="pix-qrcode"
+        >
+
+        <div class="pix-key" id="pixKey">
+            medvetmarcoribeiro19@gmail.com
+        </div>
+
+        <button class="copy-pix" id="copyPix">
+            Copiar chave PIX
+        </button>
+
+        <a
+            href="https://w.app/xzpf2k"
+            class="send-proof"
+            target="_blank"
+        >
+            Enviar comprovante
+        </a>
+
+    </div>
+
+</div>
 
 <script src="script.js"></script>
 
