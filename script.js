@@ -103,3 +103,33 @@ document.addEventListener(
         `;
     }
 );
+const openPix = document.getElementById("openPix");
+const closePix = document.getElementById("closePix");
+const pixModal = document.getElementById("pixModal");
+const copyPix = document.getElementById("copyPix");
+const pixKey = document.getElementById("pixKey");
+
+openPix.addEventListener("click", function(e){
+    e.preventDefault();
+    pixModal.classList.add("active");
+});
+
+closePix.addEventListener("click", function(){
+    pixModal.classList.remove("active");
+});
+
+pixModal.addEventListener("click", function(e){
+    if(e.target === pixModal){
+        pixModal.classList.remove("active");
+    }
+});
+
+copyPix.addEventListener("click", function(){
+    navigator.clipboard.writeText(pixKey.innerText.trim());
+
+    copyPix.innerText = "Chave copiada!";
+
+    setTimeout(function(){
+        copyPix.innerText = "Copiar chave PIX";
+    }, 2000);
+});
